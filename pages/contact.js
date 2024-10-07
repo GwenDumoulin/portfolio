@@ -11,6 +11,7 @@ import englishTranslation from '../data/englishTranslation.json'
 import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
+import { useRouter } from 'next/router'
 
 emailjs.init('YQBhN_1EDQoAuIOmv')
 
@@ -23,6 +24,8 @@ const contactSchema = yup.object({
 const Contact = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
+  const router = useRouter();
+  const basePath = router.basePath;
 
   const form = useRef()
 
@@ -52,6 +55,7 @@ const Contact = () => {
     <div className="flex items-center">
       <Head>
         <title>Contact | Gwenaëlle Dumoulin</title>
+        <link rel="icon" href={`${basePath}/favicon.ico`} type="image/x-icon"></link>
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4054073151944400"

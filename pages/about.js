@@ -6,14 +6,18 @@ import englishTranslation from '../data/englishTranslation.json'
 import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
+import { useRouter } from 'next/router'
 
 const About = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
+  const router = useRouter();
+  const basePath = router.basePath;
   return (
     <div className="h-screen lg:pl-20 lg:pr-32">
       <Head>
         <title>{translation.navAbout} | Gwenaëlle Dumoulin</title>
+        <link rel="icon" href={`${basePath}/favicon.ico`} type="image/x-icon"></link>
       </Head>
       <div className="flex justify-between md:mx-20 md:pt-32 pt-28">
         <div className="flex flex-col md:ml-20 px-10 mt-10">

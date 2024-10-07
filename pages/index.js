@@ -4,10 +4,13 @@ import englishTranslation from '../data/englishTranslation.json'
 import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
+import { useRouter } from 'next/router'
 
 export default function Home() {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
+  const router = useRouter();
+  const basePath = router.basePath;
   return (
     <div>
       <Head>
@@ -25,6 +28,7 @@ export default function Home() {
           content="Front-End Developer - Gwenaëlle Dumoulin"
         />
         <title>Gwenaëlle Dumoulin - {translation.homeJob}</title>
+        <link rel="icon" href={`${basePath}/favicon.ico`} type="image/x-icon"></link>
       </Head>
       <HomePage />
     </div>

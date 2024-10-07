@@ -1,11 +1,15 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const Error404 = () => {
+  const router = useRouter();
+  const basePath = router.basePath;
   return (
     <section className="flex items-center text-black">
       <Head>
         <title>404 | Gwenaëlle Dumoulin</title>
+        <link rel="icon" href={`${basePath}/favicon.ico`} type="image/x-icon"></link>
       </Head>
 
       <div className="h-screen container flex flex-col items-center justify-center px-5 mx-auto my-8">

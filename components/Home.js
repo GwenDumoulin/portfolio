@@ -10,6 +10,7 @@ import { LanguageContext } from '../components/LanguageContext'
 const Home = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
+  let resume = language === 'en' ? "/resume.pdf" : "/frenchresume.pdf"
   return (
     <motion.div
       initial="hidden"
@@ -47,7 +48,7 @@ const Home = () => {
               {translation.contactButton}
             </Link>
             <Link
-              href="/resume.pdf"
+              href={resume}
               target="_blank"
               className="px-12 py-3 text-sm font-medium text-culturedWhite bg-[#C33100] rounded shadow active:bg-[#FF6617] hover:bg-[#FF4800] focus:outline-none focus:ring"
             >
