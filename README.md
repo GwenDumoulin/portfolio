@@ -1,6 +1,6 @@
-# Prasad Chavan's Personal Portfolio and Blog
-Link to live site: https://prasadchavan.me
+# Gwenaelle Dumoulin's Personal Portfolio and Blog
 
+Link to live site:
 
 ## Features
 
@@ -9,6 +9,7 @@ Link to live site: https://prasadchavan.me
 - Dynamic routing and SEO optimization with Next.js.
 
 ## Technology Used:
+
 - React JS
 - Next JS
 - MarkDown
@@ -19,7 +20,3 @@ Link to live site: https://prasadchavan.me
 ## Contributing
 
 Contributions are welcome! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
-
-## Copyrights
-
-[© Prasad Chavan](https://github.com/prasad-chavan1) <a>2023</a>
