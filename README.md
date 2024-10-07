@@ -1,4 +1,4 @@
-# Gwenaelle Dumoulin's Personal Portfolio and Blog
+# Gwenaelle Dumoulin's Personal Portfolio
 
 Link to live site:
 
