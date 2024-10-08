@@ -17,12 +17,32 @@
   "aboutTextPresentation3": "Check out some of my work",
   "aboutLink": "here",
   "aboutSkills": "SKILLS",
-  "project1Name": "KASA",
-  "project1Text": "Kasa is a web application that I developed as part of my training on React. Based on a provided mockup, I completed the integration and development of this apartment rental platform using React and Next.js. I also used TailwindCSS for styling management and TypeScript. This project allowed me to gain a better understanding of the key concepts of Next.js and TypeScript, as well as to enhance my front-end development skills.",
-  "project2Name": "SHINY AGENCY",
-  "project2Text": "This project was completed as part of the React course created and distributed by OpenClassrooms. The goal of this project was to build the web page of a freelance agency, using React, Create React App, React Router, Styled Components and Jest.",
-  "project3Name": "PORTFOLIO",
-  "project3Text": "Crafted with a focus on responsiveness and functionality, my portfolio allows me to showcase personal information, resume, projects, and contact details. Leveraging the power of Next.js for dynamic routing and SEO optimization, this portfolio rank high on search engines. It was created with a technology stack including React, Next.js, MarkDown, HTML/CSS/JS and Tailwind CSS.",
+  "projects": [
+    {
+      "projectName": "KASA",
+      "projectText": "Kasa is a web application that I developed as part of my training on React. Based on a provided mockup, I completed the integration and development of this apartment rental platform using React and Next.js. I also used TailwindCSS for styling management and TypeScript. This project allowed me to gain a better understanding of the key concepts of Next.js and TypeScript, as well as to enhance my front-end development skills.",
+      "projectTech": "React, Next.js, TypeScript, TailwindCSS, HTML, CSS",
+      "projectImage": "/images/project-images/kasa.png",
+      "projectGit": "https://github.com/GwenDumoulin/kasa",
+      "projectLink": "https://www.foxidees.com/kasa/"
+    },
+    {
+      "projectName": "SHINY AGENCY",
+      "projectText": "This project was completed as part of the React course created and distributed by OpenClassrooms. The goal of this project was to build the web page of a freelance agency, using React, Create React App, React Router, Styled Components and Jest.",
+      "projectTech": "React, CRA, React Router, JavaScript, Styled Components, Jest, HTML, CSS",
+      "projectImage": "/images/project-images/shiny.png",
+      "projectGit": "https://github.com/GwenDumoulin/shiny-agency",
+      "projectLink": "https://www.foxidees.com/shiny-agency/"
+    },
+    {
+      "projectName": "PORTFOLIO",
+      "projectText": "Crafted with a focus on responsiveness and functionality, my portfolio allows me to showcase personal information, resume, projects, and contact details. Leveraging the power of Next.js for dynamic routing and SEO optimization, this portfolio rank high on search engines. It was created with a technology stack including React, Next.js, MarkDown, HTML/CSS/JS and Tailwind CSS.",
+      "projectTech": "React, Next.js, JavaScript, MarkDown, TailwindCSS, HTML, CSS",
+      "projectImage": "/images/project-images/portfolio.png",
+      "projectGit": "https://github.com/GwenDumoulin/portfolio",
+      "projectLink": "https://www.foxidees.com/portfolio/"
+    }
+  ],
   "contactTalk": "Let's Talk",
   "contactText1": "Have any questions? Send me a message here!",
   "contactText2": "I respond quickly (within 48 hours).",

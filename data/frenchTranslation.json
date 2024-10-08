@@ -17,12 +17,32 @@
   "aboutTextPresentation3": "Découvrez quelques-uns de mes projets",
   "aboutLink": "ici",
   "aboutSkills": "COMPETENCES",
-  "project1Name": "KASA",
-  "project1Text": "Kasa est une application web que j'ai développée dans le cadre de ma formation sur React. À partir d'une maquette fournie, j'ai réalisé l'intégration et le développement de cette plateforme de location d'appartements en utilisant React et Next.js. J'ai également utilisé TailwindCSS pour la gestion des styles et TypeScript. Ce projet m'a permis de mieux comprendre les concepts clés de Next.js et TypeScript, ainsi que de développer mes compétences en développement front-end.",
-  "project2Name": "SHINY AGENCY",
-  "project2Text": "Ce projet a été réalisé dans le cadre du cours sur React créé et diffusé par OpenClassrooms. L'objectif de ce projet était de développer la page web d'une agence freelance, en utilisant React, Create React App, React Router, Styled Components et Jest.",
-  "project3Name": "PORTFOLIO",
-  "project3Text": "Conçu avec un accent sur la réactivité et la fonctionnalité, mon portfolio me permet de présenter des informations personnelles, mon CV, mes projets et mes coordonnées. En tirant parti de la puissance de Next.js pour le routage dynamique et l'optimisation SEO, ce portfolio est bien référencé sur les moteurs de recherche. Il a été créé avec une stack technologique comprenant React, Next.js, MarkDown, HTML/CSS/JS et Tailwind CSS.",
+  "projects": [
+    {
+      "projectName": "KASA",
+      "projectText": "Kasa est une application web que j'ai développée dans le cadre de ma formation sur React. À partir d'une maquette fournie, j'ai réalisé l'intégration et le développement de cette plateforme de location d'appartements en utilisant React et Next.js. J'ai également utilisé TailwindCSS pour la gestion des styles et TypeScript. Ce projet m'a permis de mieux comprendre les concepts clés de Next.js et TypeScript, ainsi que de développer mes compétences en développement front-end.",
+      "projectTech": "React, Next.js, TypeScript, TailwindCSS, HTML, CSS",
+      "projectImage": "/images/project-images/kasa.png",
+      "projectGit": "https://github.com/GwenDumoulin/kasa",
+      "projectLink": "https://www.foxidees.com/kasa/"
+    },
+    {
+      "projectName": "SHINY AGENCY",
+      "projectText": "Ce projet a été réalisé dans le cadre du cours sur React créé et diffusé par OpenClassrooms. L'objectif de ce projet était de développer la page web d'une agence freelance, en utilisant React, Create React App, React Router, Styled Components et Jest.",
+      "projectTech": "React, CRA, React Router, JavaScript, Styled Components, Jest, HTML, CSS",
+      "projectImage": "/images/project-images/shiny.png",
+      "projectGit": "https://github.com/GwenDumoulin/shiny-agency",
+      "projectLink": "https://www.foxidees.com/shiny-agency/"
+    },
+    {
+      "projectName": "PORTFOLIO",
+      "projectText": "Conçu avec un accent sur la réactivité et la fonctionnalité, mon portfolio me permet de présenter des informations personnelles, mon CV, mes projets et mes coordonnées. En tirant parti de la puissance de Next.js pour le routage dynamique et l'optimisation SEO, ce portfolio est bien référencé sur les moteurs de recherche. Il a été créé avec une stack technologique comprenant React, Next.js, MarkDown, HTML/CSS/JS et Tailwind CSS.",
+      "projectTech": "React, Next.js, JavaScript, MarkDown, TailwindCSS, HTML, CSS",
+      "projectImage": "/images/project-images/portfolio.png",
+      "projectGit": "https://github.com/GwenDumoulin/portfolio",
+      "projectLink": "https://www.foxidees.com/portfolio/"
+    }
+  ],
   "contactTalk": "Discutons-en",
   "contactText1": "Vous avez des questions ? Envoyez-moi un message ici !",
   "contactText2": "Je réponds rapidement (sous 48 heures).",
