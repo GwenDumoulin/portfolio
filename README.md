@@ -1,6 +1,6 @@
 # Gwenaelle Dumoulin's Personal Portfolio
 
-Link to live site:
+Link to live site: https://www.foxidees.com/portfolio
 
 ## Features
 
