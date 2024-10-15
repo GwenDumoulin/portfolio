@@ -7,17 +7,18 @@ import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
 import { useRouter } from 'next/router'
-import { Button } from '../components/Button'
+import Button from '../components/Button'
 
 const About = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
   const router = useRouter()
   const basePath = router.basePath
+  let resume = language === 'en' ? '/resume.pdf' : '/frenchresume.pdf'
   return (
     <div className="h-screen lg:pl-20 lg:pr-32">
       <Head>
-        <title>{translation.navAbout} | Gwenaëlle Dumoulin</title>
+        <title>{`${translation.navAbout} | Gwenaëlle Dumoulin`}</title>
         <link
           rel="icon"
           href={`${basePath}/favicon.ico`}

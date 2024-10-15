@@ -18,7 +18,7 @@ const projects = () => {
   return (
     <div className="h-screen mx-5 sm:mx-auto pt-32">
       <Head>
-        <title>{translation.navProjects} | Gwenaëlle Dumoulin</title>
+        <title>{`${translation.navProjects} | Gwenaëlle Dumoulin`}</title>
         <link
           rel="icon"
           href={`${basePath}/favicon.ico`}

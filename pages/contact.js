@@ -12,6 +12,7 @@ import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 
 emailjs.init('YQBhN_1EDQoAuIOmv')
 
@@ -61,11 +62,11 @@ const Contact = () => {
           href={`${basePath}/favicon.ico`}
           type="image/x-icon"
         ></link>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4054073151944400"
           crossOrigin="anonymous"
-        ></script>
+        />
       </Head>
 
       <div className="h-screen max-w-screen-xl px-4 py-16 mx-auto md:pt-32 md:p-20">

@@ -6,7 +6,7 @@ import englishTranslation from '../data/englishTranslation.json'
 import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
-import { Button } from '../components/Button'
+import Button from '../components/Button'
 
 const Home = () => {
   const { language } = useContext(LanguageContext)
