@@ -24,8 +24,8 @@ const contactSchema = yup.object({
 const Contact = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
-  const router = useRouter();
-  const basePath = router.basePath;
+  const router = useRouter()
+  const basePath = router.basePath
 
   const form = useRef()
 
@@ -51,17 +51,23 @@ const Contact = () => {
       }
     )
   }
+
   return (
     <div className="flex items-center">
       <Head>
         <title>Contact | Gwenaëlle Dumoulin</title>
-        <link rel="icon" href={`${basePath}/favicon.ico`} type="image/x-icon"></link>
+        <link
+          rel="icon"
+          href={`${basePath}/favicon.ico`}
+          type="image/x-icon"
+        ></link>
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4054073151944400"
           crossOrigin="anonymous"
         ></script>
       </Head>
+
       <div className="h-screen max-w-screen-xl px-4 py-16 mx-auto md:pt-32 md:p-20">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2">

@@ -7,17 +7,22 @@ import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
 import { useRouter } from 'next/router'
+import { Button } from '../components/Button'
 
 const About = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
-  const router = useRouter();
-  const basePath = router.basePath;
+  const router = useRouter()
+  const basePath = router.basePath
   return (
     <div className="h-screen lg:pl-20 lg:pr-32">
       <Head>
         <title>{translation.navAbout} | Gwenaëlle Dumoulin</title>
-        <link rel="icon" href={`${basePath}/favicon.ico`} type="image/x-icon"></link>
+        <link
+          rel="icon"
+          href={`${basePath}/favicon.ico`}
+          type="image/x-icon"
+        ></link>
       </Head>
       <div className="flex justify-between md:mx-20 md:pt-32 pt-28">
         <div className="flex flex-col md:ml-20 px-10 mt-10">
@@ -118,19 +123,8 @@ const About = () => {
             <Skills />
           </div>
           <div className="flex flex-wrap justify-center gap-4 mb-8 grid-cols-2">
-            <Link
-              href="/contact"
-              className="px-12 py-3 text-sm font-medium text-culturedWhite bg-[#C33100] rounded shadow active:bg-[#FF6617] hover:bg-[#FF4800] focus:outline-none focus:ring"
-            >
-              {translation.contactButton}
-            </Link>
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-              className="px-12 py-3 text-sm font-medium text-culturedWhite bg-[#C33100] rounded shadow active:bg-[#FF6617] hover:bg-[#FF4800] focus:outline-none focus:ring"
-            >
-              {translation.resumeButton}
-            </Link>
+            <Button href="/contact" text={translation.contactButton} />
+            <Button href={resume} text={translation.resumeButton} />
           </div>
         </div>
       </div>

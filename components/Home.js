@@ -6,11 +6,12 @@ import englishTranslation from '../data/englishTranslation.json'
 import frenchTranslation from '../data/frenchTranslation.json'
 import { useContext } from 'react'
 import { LanguageContext } from '../components/LanguageContext'
+import { Button } from '../components/Button'
 
 const Home = () => {
   const { language } = useContext(LanguageContext)
   let translation = language === 'en' ? englishTranslation : frenchTranslation
-  let resume = language === 'en' ? "/resume.pdf" : "/frenchresume.pdf"
+  let resume = language === 'en' ? '/resume.pdf' : '/frenchresume.pdf'
   return (
     <motion.div
       initial="hidden"
@@ -41,19 +42,8 @@ const Home = () => {
             React | JavaScript | TypeScript | Next.js | Vue.js
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-8 grid-cols-2">
-            <Link
-              href="/contact"
-              className="px-12 py-3 text-sm font-medium text-culturedWhite bg-[#C33100] rounded shadow active:bg-[#FF6617] hover:bg-[#FF4800] focus:outline-none focus:ring"
-            >
-              {translation.contactButton}
-            </Link>
-            <Link
-              href={resume}
-              target="_blank"
-              className="px-12 py-3 text-sm font-medium text-culturedWhite bg-[#C33100] rounded shadow active:bg-[#FF6617] hover:bg-[#FF4800] focus:outline-none focus:ring"
-            >
-              {translation.resumeButton}
-            </Link>
+            <Button href="/contact" text={translation.contactButton} />
+            <Button href={resume} text={translation.resumeButton} />
           </div>
           <div className="flex justify-center md:absolute md:bottom-[0] md:left-[40px] mb-[-80px] md:mb-[0]">
             <Image
